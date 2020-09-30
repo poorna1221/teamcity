@@ -1,0 +1,10 @@
+
+<suite name="Test-method Suite" parallel="classes" thread-count="3" >
+  <test name="Test-method test" group-by-instances="true">
+    <classes>
+      <class name="parallelExecutionClasses.BaseClassTest1" />
+      <class name="parallelExecutionClasses.BaseClassTest2" />
+      <class name="parallelExecutionClasses.BaseClassTest3" />
+    </classes>
+  </test>
+</suite>

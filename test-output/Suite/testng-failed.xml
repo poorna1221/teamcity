@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="BrowserName" value="Chrome"/>
+    <parameter name="Spouse" value="Sowjanya"/>
+    <parameter name="Environment" value="UAT"/>
+    <parameter name="SpouseFamilyName" value="Maram"/>
+    <parameter name="Name" value="PoornaChandraRao Jogiparti"/>
+    <classes>
+      <class name="com.testng.concepts.Parameters">
+        <methods>
+          <include name="beforTest"/>
+          <include name="parameters" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testng.concepts.Parameters -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

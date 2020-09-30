@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">9</td><td class="numi">9</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">360.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.testng.classes.AddToCartTest</td><td><a href="#m1"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1588241951320</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.testng.classes.ContactUsTest</td><td><a href="#m2"><b>contactUs</b>  </a></td><td class="numi">1</td><td>1588241827321</td><td class="numi">22318</td></tr>
+<tr class="failedeven"><td rowspan="2">com.parallelmethods.ParallelTestsTest</td><td><a href="#m3"><b>contactUs</b>  </a></td><td class="numi">1</td><td>1588241885795</td><td class="numi">800</td></tr><tr class="failedeven"><td><a href="#m4"><b>login</b>  </a></td><td class="numi">1</td><td>1588241900706</td><td class="numi">1158</td></tr>
+<tr class="failedodd"><td rowspan="1">com.testng.classes.DataProviderExampleTest</td><td><a href="#m5"><b>test3</b>  </a></td><td class="numi">1</td><td>1588241849649</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.testng.classes.AddToCartTest</td><td><a href="#m6"><b>addToCartTest</b>  </a></td><td class="numi">1</td><td>1588241596573</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.testng.classes.LoginTest</td><td><a href="#m7"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1588241951322</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.testng.classes.ContactUsTest</td><td><a href="#m8"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1588241951322</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">parallelExecutionMethods.BaseClassTest</td><td><a href="#m9"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1588241951321</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">parallelExecutionMethods.BaseClassTest</td><td><a href="#m10"><b>loginChandraTest</b>  </a></td><td class="numi">1</td><td>1588241596574</td><td class="numi">86268</td></tr><tr class="passedodd"><td><a href="#m11"><b>loginPoornaTest</b>  </a></td><td class="numi">1</td><td>1588241682843</td><td class="numi">9125</td></tr><tr class="passedodd"><td><a href="#m12"><b>loginRaoTest</b>  </a></td><td class="numi">1</td><td>1588241691969</td><td class="numi">135351</td></tr>
+<tr class="passedeven"><td rowspan="1">com.testng.classes.LoginTest</td><td><a href="#m13"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1588241849649</td><td class="numi">23649</td></tr>
+<tr class="passedodd"><td rowspan="1">com.parallelmethods.ParallelTestsTest</td><td><a href="#m14"><b>test</b>  </a></td><td class="numi">1</td><td>1588241915818</td><td class="numi">35397</td></tr>
+<tr class="passedeven"><td rowspan="4">com.testng.classes.DataProviderExampleTest</td><td><a href="#m15"><b>test1</b>  </a></td><td class="numi">3</td><td>1588241849646</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m16"><b>test1</b>  </a></td><td class="numi">3</td><td>1588241849646</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m17"><b>test1</b>  </a></td><td class="numi">3</td><td>1588241849646</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m18"><b>test2</b> (smokeTest) </a></td><td class="numi">1</td><td>1588241849648</td><td class="numi">0</td></tr>
+</table>
+<h1>Command line test</h1>
+<h2 id="m1">com.testng.classes.AddToCartTest:tearDown</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.testng.classes.AddToCartTest.tearDown(AddToCartTest.java:171)
+<br/>33 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.parallelmethods.ParallelTestsTest:login</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#email&quot;}
+  (Session info: chrome=81.0.4044.122)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DESKTOP-D3HDG58&apos;, ip: &apos;192.168.1.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\Lenovo\AppData\Local\Temp\scoped_dir13992_148438639}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64831}, acceptInsecureCerts=false, browserVersion=81.0.4044.122, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 183132f7687c568d7b28c19fa2c69994
+*** Element info: {Using=id, value=email}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+<br/>at com.parallelmethods.ParallelTestsTest.login(ParallelTestsTest.java:158)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.testng.classes.ContactUsTest:contactUs</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at com.testng.classes.ContactUsTest.contactUs(ContactUsTest.java:54)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.parallelmethods.ParallelTestsTest:contactUs</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;textarea[class=&apos;form-control&apos;]&quot;}
+  (Session info: chrome=81.0.4044.122)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DESKTOP-D3HDG58&apos;, ip: &apos;192.168.1.111&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\Lenovo\AppData\Local\Temp\scoped_dir14280_289929942}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64773}, acceptInsecureCerts=false, browserVersion=81.0.4044.122, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 0aeaf37aa5cbc02acdc9fb15106a81c9
+*** Element info: {Using=css selector, value=textarea[class=&apos;form-control&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+<br/>at com.parallelmethods.ParallelTestsTest.contactUs(ParallelTestsTest.java:146)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.testng.classes.DataProviderExampleTest:test3</h2>
+<div style="padding-left:3em">
+<p>
+Parameter &apos;browser&apos; is required by @Test on method test3 but has not been marked @Optional or defined
+</p>
+org.testng.internal.Parameters.createParameters(Parameters.java:155)
+<br/>at org.testng.internal.Parameters.createParameters(Parameters.java:355)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.testng.classes.AddToCartTest:addToCartTest</h2>
+<div style="padding-left:3em">
+<p>
+Parameter &apos;browser&apos; is required by @Test on method addToCartTest but has not been marked @Optional or defined
+</p>
+org.testng.internal.Parameters.createParameters(Parameters.java:155)
+<br/>at org.testng.internal.Parameters.createParameters(Parameters.java:355)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.testng.classes.LoginTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.testng.classes.ContactUsTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">parallelExecutionMethods.BaseClassTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">parallelExecutionMethods.BaseClassTest:loginChandraTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.testng.classes.DataProviderExampleTest:test1</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Poonra</td>
+<td>2</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.testng.classes.DataProviderExampleTest:test1</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Poonra</td>
+<td>1</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.testng.classes.DataProviderExampleTest:test1</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Poonra</td>
+<td>3</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.parallelmethods.ParallelTestsTest:test</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">parallelExecutionMethods.BaseClassTest:loginPoornaTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.testng.classes.DataProviderExampleTest:test2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.testng.classes.LoginTest:loginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">parallelExecutionMethods.BaseClassTest:loginRaoTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

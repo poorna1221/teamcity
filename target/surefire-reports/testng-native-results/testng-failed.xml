@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.testng.classes.AddToCartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="addToCartTest"/>
+        </methods>
+      </class> <!-- com.testng.classes.AddToCartTest -->
+      <class name="com.parallelmethods.ParallelTestsTest">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="contactUs"/>
+        </methods>
+      </class> <!-- com.parallelmethods.ParallelTestsTest -->
+      <class name="com.testng.classes.ContactUsTest">
+        <methods>
+          <include name="contactUs"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.testng.classes.ContactUsTest -->
+      <class name="com.testng.classes.DataProviderExampleTest">
+        <methods>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- com.testng.classes.DataProviderExampleTest -->
+      <class name="com.testng.classes.LoginTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.testng.classes.LoginTest -->
+      <class name="parallelExecutionMethods.BaseClassTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- parallelExecutionMethods.BaseClassTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
